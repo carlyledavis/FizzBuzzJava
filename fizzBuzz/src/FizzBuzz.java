@@ -1,20 +1,8 @@
-import org.apache.commons.lang3.StringUtils;
 
 public class FizzBuzz {
     
     public String run(String numbers) {
-        String[] formattedNumbers = numbers.split(" ");
-        for(int i = 0; i < formattedNumbers.length; i++) {
-            if(Integer.parseInt(formattedNumbers[i]) % 3 == 0 && Integer.parseInt(formattedNumbers[i]) % 5 == 0) {
-                formattedNumbers[i] = "FizzBuzz";
-            } else if (Integer.parseInt(formattedNumbers[i]) % 3 == 0) {
-                formattedNumbers[i] = "Fizz";
-            } else if (Integer.parseInt(formattedNumbers[i]) % 5 == 0) {
-                formattedNumbers[i] = "Buzz";
-            }
-        }
-
-        return StringUtils.join(formattedNumbers, " ");
+        return numbers;
     }
 
     public static void main(String[] args) {
