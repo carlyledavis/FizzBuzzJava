@@ -13,19 +13,22 @@ public class FizzBuzzTest extends TestCase {
 
     @Test
     public void testReturnsFizzWhenInputIsDivisibleByThree() {
-        String result = fizzBuzz.run("1 2 3 4");
+        int[] input = {1, 2, 3, 4};
+        String result = fizzBuzz.run(input);
         assertEquals("1 2 Fizz 4", result);
     }
 
     @Test
     public void testReturnsBuzzWhenInputIsDivisibleByFive() {
-        String result = fizzBuzz.run("5 7");
+        int[] input = {5, 7};
+        String result = fizzBuzz.run(input);
         assertEquals("Buzz 7", result);
     }
 
     @Test
     public void testReturnsFizzBuzzWhenInputIsDivisibleByThreeAndFive() {
-        String result = fizzBuzz.run("5 15 18");
+        int[] input = {5, 15, 18};
+        String result = fizzBuzz.run(input);
         assertEquals("Buzz FizzBuzz Fizz", result);
     }
 }
