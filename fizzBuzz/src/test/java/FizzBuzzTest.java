@@ -1,8 +1,9 @@
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FizzBuzzTest extends TestCase {
+import static junit.framework.TestCase.assertEquals;
+
+public class FizzBuzzTest {
 
     private FizzBuzz fizzBuzz;
 
